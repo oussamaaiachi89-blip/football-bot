@@ -2,7 +2,6 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler
 
-
 TOKEN = "8935013119:AAG7SSGEmpJV5AoADxJcMDHuJL3mQrvpQeo"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -16,5 +15,3 @@ if __name__ == '__main__':
     
     print("البوت يعمل الآن...")
     application.run_polling()
-    
-  
