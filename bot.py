@@ -1,3 +1,6 @@
-import os
+import time
 
-print("البوت يعمل الآن!")
+while True:
+    print("البوت يعمل ويراقب الأهداف...")
+    time.sleep(60)
+  
