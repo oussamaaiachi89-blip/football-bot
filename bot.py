@@ -1,10 +1,18 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
+# توكن البوت
 TOKEN = "8935013119:AAG7SSGEmpJV5AoADxJcMDHuJL3mQrvpQeo"
+
+# معرف القناة الوجهة
 DESTINATION_CHANNEL_ID = -1004381263503
 
-SOURCE_CHANNELS = [-1002114461923, -1002402557947]
+# قائمة القنوات المصدر
+SOURCE_CHANNELS = [
+    -1004381263503, # القناة المصدر 1
+    -1002114461923, # القناة المصدر 2
+    -1002402557947  # القناة المصدر 3
+]
 
 async def forward_content(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.channel_post and update.channel_post.chat.id in SOURCE_CHANNELS:
